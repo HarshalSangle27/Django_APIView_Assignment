@@ -16,7 +16,6 @@ class VendorProductMappingSerializer(serializers.ModelSerializer):
             
             existing_primary = VendorProductMapping.objects.filter(vendor=vendor, primary_mapping=True)
             
-            
             if self.instance:
                 existing_primary = existing_primary.exclude(pk=self.instance.pk)
                 
