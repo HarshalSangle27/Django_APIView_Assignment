@@ -17,7 +17,7 @@ This project is a modular backend built with Django and Django REST Framework. I
 * `course_certification_mapping`
 
 ## Setup Steps
-[cite_start]Follow these steps to get the project running on your local machine[cite: 259]:
+Follow these steps to get the project running on your local machine[cite: 259]:
 
 1. **Clone the repository:**
    ```bash
