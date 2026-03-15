@@ -2,7 +2,7 @@ from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
 from django.shortcuts import render
 
-# Create your views here.
+
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -20,7 +20,7 @@ class ProductCourseMappingListCreateAPIView(APIView):
     def get(self, request):
         mappings = ProductCourseMapping.objects.all()
         
-        # Filtering Requirement: query-param based filtering 
+        
         product_id = request.query_params.get('product_id')
         if product_id:
             mappings = mappings.filter(product_id=product_id)
